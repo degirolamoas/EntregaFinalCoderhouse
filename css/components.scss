@@ -1,0 +1,21 @@
+/*Carousel*/
+.carousel .carousel-inner .carousel-item img {
+    width: calc(100% - 30%);
+    ;
+}
+
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+    background-color: rgba(50, 150, 93, .8);
+    color: #fff;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('../img/left-arrow.svg');
+
+}
+
+.carousel-control-next-icon {
+    background-image: url('../img/next.svg');
+
+}

@@ -1,0 +1,9 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="invisible_box" data-name="invisible box">
+    <rect id="Rectángulo_7" data-name="Rectángulo 7" width="50" height="50" fill="none"/>
+    <rect id="Rectángulo_8" data-name="Rectángulo 8" width="50" height="50" fill="none"/>
+  </g>
+  <g id="icons_Q2" data-name="icons Q2" transform="translate(4 4.098)">
+    <path id="Trazado_1" data-name="Trazado 1" d="M42.855,4.1H7.15A3.045,3.045,0,0,0,4,7.145V42.955A3.045,3.045,0,0,0,7.15,46h35.7A3.045,3.045,0,0,0,45.9,42.955V7.145A3.045,3.045,0,0,0,42.855,4.1ZM16.5,39.8H10.2V19.852h6.3Zm-3.15-22.683a3.675,3.675,0,0,1-3.57-3.675,3.57,3.57,0,0,1,7.141,0,3.675,3.675,0,0,1-3.57,3.675ZM39.7,39.8h-6.2V30.038c0-2.31,0-5.251-3.255-5.251s-3.675,2.52-3.675,5.146V39.8h-6.2V19.852h5.881v2.73h.105a6.511,6.511,0,0,1,5.881-3.255c6.3,0,7.456,4.1,7.456,9.556Z" transform="translate(-4 -4.098)" fill="#fff"/>
+  </g>
+</svg>

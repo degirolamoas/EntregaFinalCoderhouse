@@ -1,0 +1,39 @@
+//Colours
+$body-background-color: #FEF6F9;
+$secondary-color: #FEA0C3;
+$main-color:#32965D;
+
+//Navbar
+$navbar-font-color: #fff;
+$navbar-background-color: transparent;
+$navbar-item-background: #000;
+$navbar-item-hover-background-color: transparent;
+ $navbar-item-hover-font-color: $navbar-font-color;
+
+//Body
+$body-font-family: Montserrat;
+$body-font-weight: regular;
+$body-font-size: 16px;
+$body-height: 100vh;
+
+//Footer
+$footer-height:15vh;
+$footer-font-color: #fff;
+
+
+
+//Buttons
+
+$button-border: none;
+$button-border-radius: 8px;
+$button-box-shadow: none;
+$button-font-family: Montserrat;
+$button-font-size: 1em;
+
+$main-button-background: $main-color;
+$main-button-color: #fff;
+
+
+$secondary-button-background: transparent;
+$secondary-button-color: $main-color;
+

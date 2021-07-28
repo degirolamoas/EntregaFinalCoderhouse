@@ -1,0 +1,96 @@
+/*Auxiliares*/
+
+.width-30 {
+    width: 30%;
+}
+
+.width-70 {
+    width: 70%;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 767px) {
+
+    footer {
+        color: white;
+        width: 100%;
+        /* display: flex;
+        flex-wrap: wrap; */
+        width: 100%;
+    }
+
+    footer,
+    .footer-top,
+    .footer-bottom,
+    .footer-link {
+        width: 100%;
+    }
+
+    .footer-top {
+        background-color: #32965D;
+        min-height: unset;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .footer-top .footer-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1em;
+    }
+
+
+    .footer-bottom {
+        background-color: #FF7B9C;
+        min-height: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    footer p {
+        text-align: center;
+        margin-left: 1em;
+    }
+
+    /* Blog */
+    .blog__list {
+        .blog__list__item {
+            &--ui,
+            &--customers,
+            &--colours {
+                width: 80%!important;
+            }
+        }
+    }
+
+    /*Contacto*/
+    #contacto {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contacto .form-group label,
+    #contacto .form-group .form-control {
+        width: 100%;
+    }
+
+    #contacto .multi-input {
+        width: 100%;
+        align-items: center;
+    }
+
+    #contacto .multi-input .form-control {
+        width: 45% !important;
+        margin: 0;
+    }
+}
