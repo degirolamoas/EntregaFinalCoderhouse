@@ -307,10 +307,10 @@ footer {
   color: #fff; }
 
 .carousel-control-prev-icon {
-  background-image: url("../img/left-arrow.svg"); }
+  background-image: url("../../img/left-arrow.svg"); }
 
 .carousel-control-next-icon {
-  background-image: url("../img/next.svg"); }
+  background-image: url("../../img/next.svg"); }
 
 /************Secciones************/
 #intro .intro__text {

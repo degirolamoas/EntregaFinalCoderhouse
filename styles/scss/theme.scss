@@ -1,3 +1,5 @@
+//Here we have the skin of the project, styles that can be easily changed and does not affect the structure of the website, like colurs, fonts, borders, backgrounds, etc.
+
 @import "variables.scss";
 
 
@@ -107,7 +109,6 @@ $color in $button {
 
     &--primary {
         @extend .button;
-        // background:$main-button-background;
         padding: .6em 1em;
         text-transform: uppercase;
         color: white;
@@ -117,7 +118,6 @@ $color in $button {
     &--secondary {
         @extend .button;
         color: $secondary-button-color;
-        // background: $secondary-button-background;
 
         &:hover {
             text-decoration: underline;
@@ -127,7 +127,6 @@ $color in $button {
 
 
 //Sections
-
 
 #proyectos {
     .project__list {
@@ -191,11 +190,11 @@ $color in $button {
     &-control {
 
         &-prev-icon {
-            background-image: url('../img/left-arrow.svg');
+            background-image: url('../../img/left-arrow.svg');
         }
 
         &-next-icon {
-            background-image: url('../img/next.svg');
+            background-image: url('../../img/next.svg');
         }
     }
 }
