@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12",
+    "sass": "^1.36.0",
+    "wowjs": "^1.1.3"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/scss/index.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  }
+}
