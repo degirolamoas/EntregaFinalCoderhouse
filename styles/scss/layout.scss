@@ -1,22 +1,9 @@
-@import "variables.scss";
+/*Layout rules divide the page into sections. Layouts hold one or more modules together.*/
+//Header, footer, containers, navbars, breadcrumbs.
 
-/************Reseteo css************/
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    overflow: auto;
-}
 
 body {
-    background-color: $body-background-color;
-    font-family: $body-font-family;
-    font-weight: $body-font-weight;
 
-    /*Para resetear la unidad de medida de base de los em*/
-    font-size: $body-font-size;
     /*Grid Layout*/
     display: grid;
     grid-template-areas:
@@ -26,32 +13,21 @@ body {
     ;
 }
 
+
 /************Navegación************/
 
 /*Header*/
 .navbar-light {
-    background: $navbar-background-color;
+   
     /*Grid Layout*/
     grid-area: header;
 
     .nav-item {
-        background: $navbar-item-background;
-        color: $navbar-font-color !important;
-        text-decoration: none;
-        text-transform: uppercase;
         margin-left: 1em;
-
         transition: all ease-in-out .2s;
 
         &:hover {
             transform: scale(1.1);
-            background: $navbar-item-hover-background-color;
-            color: $navbar-item-hover-font-color;
-            font-weight: 500;
-        }
-
-        .nav-link {
-            color: $navbar-font-color;
         }
     }
 }
@@ -59,7 +35,6 @@ body {
 /*Footer*/
 
 footer {
-    color: $footer-font-color;
     width: 100%;
     margin-top: 3em;
     position: relative;
@@ -69,7 +44,6 @@ footer {
 
     .footer {
         &__top {
-            background-color: #FF7B9C;
             min-height: 5em;
             display: flex;
             flex-wrap: wrap;
@@ -101,7 +75,6 @@ footer {
         }
 
         &__bottom {
-            background-color: #32965D;
             min-height: 2em;
             display: flex;
             align-items: center;
@@ -115,3 +88,4 @@ footer {
     }
 
 }
+

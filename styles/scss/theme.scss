@@ -1,0 +1,315 @@
+@import "variables.scss";
+
+
+//Base
+
+body {
+    background-color: $body-background-color;
+    font-family: $body-font-family;
+    font-weight: $body-font-weight;
+}
+
+/*************Tipografías************/
+
+h1,
+h2,
+h3 {
+    font-family: Ultra !important;
+    font-weight: lighter;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+
+
+//Layout
+.navbar-light {
+    .navbar-header {
+        background: $navbar-background-color;
+    }
+
+    .nav-item {
+        background: $navbar-item-background;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $navbar-font-color;
+        font-weight: 500;
+
+        &:hover {
+            background: $navbar-item-hover-background-color;
+            color: $navbar-item-hover-font-color;
+        }
+
+        .nav-link {
+            color: $navbar-font-color;
+            font-weight: bold;
+        }
+
+        &.active {
+            background-color: $navbar-item-active-background-color;
+
+            .nav-link {
+                color: $navbar-item-active-color
+            }
+        }
+    }
+}
+
+footer {
+    color: $footer-font-color;
+
+    .footer {
+        &__top {
+            background-color: #FF7B9C;
+        }
+
+        &__bottom {
+            background-color: #32965D;
+        }
+    }
+
+}
+
+//components
+
+/*********Inputs***********/
+
+$button: (primary:$main-color,
+    secondary:transparent);
+
+@each $type,
+$color in $button {
+    .button--#{$type} {
+        background-color: $color;
+    }
+}
+
+
+.button {
+    border-radius: $button-border-radius;
+    box-shadow: $button-box-shadow;
+    border: $button-border;
+    border-radius: $button-border-radius;
+    font-size: $button-font-size;
+    font-family: $button-font-family;
+
+    margin-left: 1em;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &--primary {
+        @extend .button;
+        // background:$main-button-background;
+        padding: .6em 1em;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 500;
+    }
+
+    &--secondary {
+        @extend .button;
+        color: $secondary-button-color;
+        // background: $secondary-button-background;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+//Sections
+
+
+#proyectos {
+    .project__list {
+        @for $i from 1 through 3 {
+            .project__list__item-#{$i} {
+                padding: 10px 15px;
+                margin: 0 auto;
+                transition: all ease-in-out .5s;
+
+                &:hover {
+                    transform: scale(1.1);
+                    background: #FBEEF3;
+                }
+
+                .img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .project__list__item__title {
+                    font-weight: bold;
+                    margin: 1em;
+                }
+
+                .project__list__item__description {
+                    font-style: italic;
+
+                    &--bold {
+                        font-weight: bolder;
+                    }
+                }
+
+                @if $i==3 {
+                    .project__list__item__title {
+                        text-transform: uppercase;
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*Carousel*/
+.carousel {
+    &-inner {
+        .carousel-caption {
+            background-color: rgba(50, 150, 93, .8);
+            color: #fff;
+        }
+
+        ;
+    }
+
+
+    &-control {
+
+        &-prev-icon {
+            background-image: url('../img/left-arrow.svg');
+        }
+
+        &-next-icon {
+            background-image: url('../img/next.svg');
+        }
+    }
+}
+
+
+/************Secciones************/
+
+#intro {
+
+    .intro__text {
+        text-align: center;
+    }
+
+    .intro__header {
+        color: black; //TODO Cambiar por variable
+        font-size: 2.5em;
+    }
+
+    .intro__header--smaller {
+        font-size: 2em;
+    }
+
+}
+
+/*Blog*/
+
+#blog {
+    .blog__list {
+
+        .blog__list__item {
+
+            a {
+                text-decoration: none;
+                color: initial;
+                text-align: left;
+            }
+
+            .title {
+                text-transform: uppercase; //TODO cambiar por variable
+                font-size: 2.5em;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            .description {
+                font-size: 1.5em;
+                font-weight: bold;
+                color: #fff; //TODO cambiar por variable
+
+            }
+
+            &--ui {
+                @extend.blog__list__item;
+                background-color: #32965D; //TODO cambiar por variable
+            }
+
+            &--customers {
+
+                @extend.blog__list__item;
+                background-color: #FEA0C3; //TODO cambiar por variable
+
+                .title {
+                    color: #020202; //TODO cambiar por variable
+                }
+            }
+
+            &--colours {
+
+                @extend.blog__list__item;
+                background-color: #020202; //TODO cambiar por variable
+
+                .title {
+                    color: #FEA0C3; //TODO cambiar por variable
+                }
+            }
+        }
+    }
+
+}
+
+/*Contacto*/
+
+#contacto {
+
+    .card {
+        border-radius: 5px;
+        border: 2px solid #32965D;
+    }
+
+    form {
+        text-align: left;
+
+        label {
+            font-weight: bold;
+        }
+
+        .form-group {
+
+            input,
+            select,
+            textarea {
+                border: 1px solid #32965D;
+                border-radius: 5px;
+                background-color: #FCEEF3;
+                font-family: 'Montserrat';
+                font-size: 15px;
+            }
+        }
+
+        .newsletter {
+            label {
+                font-weight: normal;
+                font-size: .7em;
+            }
+        }
+    }
+}

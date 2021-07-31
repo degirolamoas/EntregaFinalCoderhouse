@@ -1,0 +1,8 @@
+/*Here we import all the scss files into one, and we will use this file to compile the css*/
+
+@import "base.scss";
+@import "layout.scss";
+@import "modules.scss";
+@import "theme.scss";
+@import "auxiliar.scss";
+

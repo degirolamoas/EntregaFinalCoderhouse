@@ -4,11 +4,15 @@ $secondary-color: #FEA0C3;
 $main-color:#32965D;
 
 //Navbar
-$navbar-font-color: #fff;
+$navbar-font-color: #040404;
 $navbar-background-color: transparent;
-$navbar-item-background: #000;
+$navbar-item-background: transparent;
+
 $navbar-item-hover-background-color: transparent;
- $navbar-item-hover-font-color: $navbar-font-color;
+$navbar-item-hover-font-color: $navbar-font-color;
+
+$navbar-item-active-background-color: #040404;
+$navbar-item-active-color: #fff;
 
 //Body
 $body-font-family: Montserrat;
@@ -21,9 +25,7 @@ $footer-height:15vh;
 $footer-font-color: #fff;
 
 
-
 //Buttons
-
 $button-border: none;
 $button-border-radius: 8px;
 $button-box-shadow: none;
@@ -36,4 +38,3 @@ $main-button-color: #fff;
 
 $secondary-button-background: transparent;
 $secondary-button-color: $main-color;
-
